@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider-Man - Marvel Rivals</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+
+
+  <style>
+    .hero-avatar-frame {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #f1c40f;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      object-fit: cover;
+    }
+    .badge-tag {
+      background-color: #f1c40f;
+      color: #1a1a2e;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+    }
+    .card-frame {
+      background-color: #0d1b2a;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .inner-card {
+      background: linear-gradient(180deg, #e63946, #900c3f);
+      border-radius: 10px;
+      padding: 20px;
+      border: 2px solid #f1c40f;
+    }
+    .custom-progress {
+      height: 12px;
+      border-radius: 6px;
+    }
+    .star-rating {
+      color: #f1c40f;
+      font-size: 1.7rem;    
+      letter-spacing: 1.2px; 
+      line-height: 1;      
+    }
+  </style>
+</head>
+
+
+<body>
+
+ <!-- HERO SECTION HEADER -->
+<section class="hero" style="background: linear-gradient(180deg, #09035c, #df1111);">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        
+
+        <div class="column is-narrow has-text-centered">
+          <img 
+            class="hero-avatar-frame" 
+            src="Img\Spider-Man.png" 
+            alt="Spider-Man Portrait" 
+            style="border: 3px solid #f1c40f; object-fit: cover; border-radius: 50%; width: 128px; height: 128px; object-position: top center;"
+          />
+        </div>
+
+        <div class="column is-5">
+          <span class="tag badge-tag mb-2">Duelist</span>
+          <h1 class="title is-1 has-text-white mb-1">SPIDER-MAN</h1>
+          <p class="subtitle is-5 has-text-grey-light">Peter Parker of Earth-616</p>
+          
+          <p class="subtitle is-5 has-text-white mb-1">Difficulty rating</p>
+          <div class="star-rating mb-3" style="color: #f1c40f;">
+            ★ ★ ★ ★ ★
+          </div>
+
+          <p class="has-text-grey-lighter mb-4" style="max-width: 600px;">
+            A nimble duelist using his web-slinging abilities and wall crawling to traverse the battlefield quickly, disrupt enemies, and deal quick burst damage.
+          </p>
+
+          <div class="buttons">
+            <a href="#history" class="button is-light is-outlined is-small">Lore</a>
+            <a href="#stats" class="button is-light is-outlined is-small">See Stats</a>
+            <a href="#abilities" class="button is-light is-outlined is-small">Abilities</a>
+            <a href="#SnW" class="button is-light is-outlined is-small">Strenghts and weaknesses</a>
+            <a href="#MVP" class="button is-light is-outlined is-small">MVP Animation</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Rivals Logo-->
+        <div class="column is-5 has-text-centered">
+          <figure class="image is-inline-block">
+            <img 
+              src="Img\Rivals logo.png" 
+              alt="Rivals logo"
+              style="filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.5)); max-height: 250px; margin-left: 110px; margin-top: -40px;"
+            />
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-desktop">
+
+  <!-- LEFT COLUMN: CHARACTER CARD -->
+<div class="column is-5-desktop">
+  <div class="card-frame has-text-centered" style="max-width: 485px; margin: 0 auto;">
+    
+    <!-- INNER CARD CONTAINER (Border set to none to remove the inner yellow bar) -->
+    <div class="inner-card mb-4" style="position: relative; overflow: hidden; padding: 0; background: none;">
+      
+      <!-- 1. Map Image (Fills the entire inner card as background) -->
+      <img 
+        src="Img\Lower_Manhattan_Map.jpg" 
+        alt="Lower Manhattan Map" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; z-index: 1;"
+      />
+
+      <!-- Gradient overlay to keep text readable and blend the bottom -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(6, 15, 24, 0.2), rgba(6, 15, 24, 0.8)); z-index: 2;"></div>
+
+      <!-- 2. Spider-Man Render (Scaled up with transform & shifted to prevent bottom/right cutoffs) -->
+      <figure class="image mb-0" style="position: relative; z-index: 3; overflow: visible;">
+        <img 
+          src="https://static.wikia.nocookie.net/marvel-rivals/images/9/97/Spider-Man_Main_Page_Portrait.png" 
+          alt="Spider-Man Full Body" 
+          style="width: 100%; height: auto; display: block; object-fit: contain; transform: scale(1.01) translateY(4px); transform-origin: bottom right; margin-bottom: -2px;"
+        />
+      </figure>
+
+    </div>
+
+    <!-- CHARACTER DETAILS BELOW THE CARD -->
+    <h3 class="title is-4 has-text-white mb-1">SPIDER-MAN</h3>
+    <p class="subtitle is-6 has-text-warning">YOUR FRIENDLY NEIGHBORHOOD HERO</p>
+    
+  </div>
+</div>
+
+        <!-- RIGHT COLUMN: HISTORY & STATS -->
+        <div class="column is-7-desktop">
+          
+          <!-- History Section -->
+          <div id="history" class="mb-6">
+            <h2 class="title is-3 border-left-accent pl-2" style="border-left: 4px solid #e63946;">
+              Lore
+            </h2>
+            <p class="content">
+              Bitten by a radioactive spider, high school student Peter Parker gained the proportional strength and agility of an arachnid. After the tragic loss of his Uncle Ben, Peter learned that with great power comes great responsibility.
+            </p>
+            <p class="content">
+              In <em>Marvel Rivals</em>, Spider-Man joins forces with heroes across time and dimensions to halt the destructive collision of universes orchestrated by Doom 2099 and Doctor Doom.
+            </p>
+
+            <!-- Highlight Box -->
+            <div class="notification is-danger is-light mt-4">
+              Spider-Man relies heavily on momentum and mobility, making him the most agile duelist in the game.
+            </div>
+          </div>
+
+        
+          <div id="stats">
+            <h2 class="title is-3 border-left-accent pl-2" style="border-left: 4px solid #e63946;">
+              Stats
+            </h2>
+            <p class="is-size-7 has-text-grey mb-4">Based on in-game mobility and combat profile.</p>
+
+          
+            <div class="mb-3">
+              <div class="is-flex is-justify-content-space-between mb-1">
+                <span class="has-text-weight-bold">Attack</span>
+                <span class="has-text-weight-bold">3/5</span>
+              </div>
+              <progress class="progress is-danger custom-progress" value="60" max="100">60%</progress>
+            </div>
+
+           
+            <div class="mb-3">
+              <div class="is-flex is-justify-content-space-between mb-1">
+                <span class="has-text-weight-bold">Defense</span>
+                <span class="has-text-weight-bold">1/5</span>
+              </div>
+              <progress class="progress is-link custom-progress" value="20" max="100">20%</progress>
+            </div>
+
+           
+            <div class="mb-3">
+              <div class="is-flex is-justify-content-space-between mb-1">
+                <span class="has-text-weight-bold">Mobility</span>
+                <span class="has-text-weight-bold">5/5</span>
+              </div>
+              <progress class="progress tag is-success custom-progress" value="100" max="100">100%</progress>
+            </div>
+
+            <div class="mb-3">
+              <div class="is-flex is-justify-content-space-between mb-1">
+                <span class="has-text-weight-bold">Utility</span>
+                <span class="has-text-weight-bold">3/5</span>
+              </div>
+              <progress class="progress is-info custom-progress" value="60" max="100">60%</progress>
+            </div>
+
+            
+            <div class="mb-3">
+              <div class="is-flex is-justify-content-space-between mb-1">
+                <span class="has-text-weight-bold">Difficulty</span>
+                <span class="has-text-weight-bold">5/5</span>
+              </div>
+              <progress class="progress is-warning custom-progress" value="100" max="100">100%</progress>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABILITIES SECTION -->
+<section id="abilities" class="section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered has-text-white mb-5">Spider-Man's Abilities</h2>
+
+    <!-- GRID OF ABILITIES -->
+    <div class="columns is-multiline is-centered">
+      
+      <!-- Ability 1: Passive -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+        <div class="card p-3" style="background-color: #060f18; border: 2px solid #f1c40f;">
+          <figure class="image is-1by1 mb-2">
+            <img 
+              src="https://static.wikia.nocookie.net/marvel-rivals/images/8/8f/Spider-Sense_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031736" 
+              alt="Spider-Sense"
+              style="object-fit: cover; border-radius: 6px;"
+            />
+          </figure>
+          <span class="tag is-warning is-dark mb-1 has-text-white">PASSIVE</span>
+          <p class="has-text-weight-bold has-text-white is-size-6">Spider-Sense</p>
+        </div>
+      </div>
+
+      <!-- Ability 2: Primary Attack -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+        <div class="card p-3" style="background-color: #060f18; border: 2px solid #e63946;">
+          <figure class="image is-1by1 mb-2">
+            <img 
+              src="https://static.wikia.nocookie.net/marvel-rivals/images/4/4b/Cyber-Web_Cluster_Icon_%28Peter_Parker%29.png/revision/latest?cb=20250915160419" 
+              alt="Web-Cluster"
+              style="width: 420px; height: 70; border-radius: 6px;"
+            />
+          </figure>
+          <span class="tag is-danger is-dark mb-1 has-text-white">PRIMARY</span>
+          <p class="has-text-weight-bold has-text-white is-size-6">Web-Cluster</p>
+        </div>
+      </div>
+
+      <!-- Ability 3: Mobility -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+        <div class="card p-3" style="background-color: #060f18; border: 2px solid #485fc7;">
+          <figure class="image is-1by1 mb-2">
+            <img 
+              src="https://static.wikia.nocookie.net/marvel-rivals/images/8/87/Web-Swing_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031705" 
+              alt="Web-Swing"
+              style="object-fit: cover; border-radius: 6px;"
+            />
+          </figure>
+          <span class="tag is-info is-dark mb-1 has-text-white">MOBILITY</span>
+          <p class="has-text-weight-bold has-text-white is-size-6">Web-Swing</p>
+        </div>
+      </div>
+
+      <!-- Ability 4: Crowd Control -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+        <div class="card p-3" style="background-color: #060f18; border: 2px solid #3e8ed0;">
+          <figure class="image is-1by1 mb-2">
+            <img 
+              src="https://static.wikia.nocookie.net/marvel-rivals/images/8/8f/Get_Over_Here%21_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031710" 
+              alt="Get Over Here!"
+              style="object-fit: cover; border-radius: 6px;"
+            />
+          </figure>
+          <span class="tag is-link is-dark mb-1">ABILITY</span>
+          <p class="has-text-weight-bold has-text-white is-size-6">Get Over Here!</p>
+        </div>
+      </div>
+
+      <!-- Ability 5: Ultimate -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+        <div class="card p-3" style="background-color: #060f18; border: 2px solid #48c78e;">
+          <figure class="image is-1by1 mb-2">
+            <img 
+              src="https://static.wikia.nocookie.net/marvel-rivals/images/2/26/Spectacular_Spin_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031659" 
+              alt="Spectacular Spin"
+              style="object-fit: cover; border-radius: 6px;"
+            />
+          </figure>
+          <span class="tag is-success is-dark mb-1 has-text-white">ULTIMATE</span>
+          <p class="has-text-weight-bold has-text-white is-size-6">Spectacular Spin</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECOND ROW: Remaining Abilities -->
+<div class="columns is-multiline is-centered mt-2">
+
+  <!-- Normal Attack: Spider-Power -->
+  <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+    <div class="card p-3" style="background-color: #060f18; border: 2px solid #e63946;">
+      <figure class="image is-1by1 mb-2">
+        <img 
+          src="https://static.wikia.nocookie.net/marvel-rivals/images/0/01/Spider-Power_Icon.png/revision/latest?cb=20250915160414" 
+          alt="Spider-Power"
+          style="width: 400px; height: 15; border-radius: 6px;"
+        />
+      </figure>
+      <span class="tag is-danger is-dark mb-1 has-text-white">SPIDER-POWER</span>
+      <p class="has-text-weight-bold has-text-white is-size-6">PRIMARY</p>
+    </div>
+  </div>
+
+  <!-- Ability: Amazing Combo -->
+  <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+    <div class="card p-3" style="background-color: #060f18; border: 2px solid #3e8ed0;">
+      <figure class="image is-1by1 mb-2">
+        <img 
+          src="https://static.wikia.nocookie.net/marvel-rivals/images/0/0f/Amazing_Combo_icon.png/revision/latest/scale-to-width-down/64?cb=20250915031717" 
+          alt="Amazing Combo"
+          style="object-fit: cover; border-radius: 6px;"
+        />
+      </figure>
+      <span class="tag is-link is-dark mb-1 has-text-white">ABILITY</span>
+      <p class="has-text-weight-bold has-text-white is-size-6">Amazing Combo</p>
+    </div>
+  </div>
+
+  <!-- Ability: Thwip and Flip -->
+  <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+    <div class="card p-3" style="background-color: #060f18; border: 2px solid #485fc7;">
+      <figure class="image is-1by1 mb-2">
+        <img 
+          src="https://static.wikia.nocookie.net/marvel-rivals/images/6/62/Thwip_and_Flip_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031724" 
+          alt="Thwip and Flip"
+          style="object-fit: cover; border-radius: 6px;"
+        />
+      </figure>
+      <span class="tag is-info is-dark mb-1 has-text-white">MOBILITY</span>
+      <p class="has-text-weight-bold has-text-white is-size-6">Thwip and Flip</p>
+    </div>
+  </div>
+
+  <!-- Passive: Wall Crawl -->
+  <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+    <div class="card p-3" style="background-color: #060f18; border: 2px solid #f1c40f;">
+      <figure class="image is-1by1 mb-2">
+        <img 
+          src="https://static.wikia.nocookie.net/marvel-rivals/images/9/91/Wall_Crawl_%28Peter_Parker%29_Icon.png/revision/latest/scale-to-width-down/64?cb=20250915031730" 
+          alt="Wall Crawl"
+          style="object-fit: cover; border-radius: 6px;"
+        />
+      </figure>
+      <span class="tag is-warning is-dark mb-1 has-text-white">PASSIVE</span>
+      <p class="has-text-weight-bold has-text-white is-size-6">Wall Crawl</p>
+    </div>
+  </div>
+
+</div>
+
+<section id="SnW" class="section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered has-text-white mb-5">Strenghts and weaknesses</h2>
+
+  
+<div class="columns is-multiline my-4">
+
+ 
+  <div class="column is-3-desktop">
+    <div class="card h-100" style="background-color: #060f18; border: 1px solid #e63946; border-radius: 8px; height: 100%;">
+      <div class="card-content">
+        <p class="subtitle is-6 has-text-danger has-text-weight-bold mb-2">AGILE DIVE HERO</p>
+        <p class="is-size-6 has-text-grey-light">
+          An incredibly agile and complex dive hero capable of assaulting and eliminating enemies from the air with his combos, and then swiftly leaves the scene.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="column is-3-desktop ">
+    <div class="card h-100" style="background-color: #060f18; border: 1px solid #f1c40f; border-radius: 8px; height: 100%;">
+      <div class="card-content">
+        <p class="subtitle is-6 has-text-warning has-text-weight-bold mb-2">BURST DAMAGE</p>
+        <p class="is-size-6 has-text-grey-light">
+          His low damage output over time means, he has to be very accurate with his abilities to maximize off of his burst damage through combos.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column is-3-desktop ">
+    <div class="card h-100" style="background-color: #060f18; border: 1px solid #596ecd; border-radius: 8px; height: 100%;">
+      <div class="card-content">
+        <p class="subtitle is-6 has-text-info has-text-weight-bold mb-2">SURVIVABILITY</p>
+        <p class="is-size-6 has-text-grey-light">
+          His low survivability and HP means he has to use his movement abilities effectively to survive and escape. Mastery of his kit creates an oppressive character.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column is-3-desktop ">
+    <div class="card h-100" style="background-color: #060f18; border: 1px solid #3e45d0; border-radius: 8px; height: 100%;">
+      <div class="card-content">
+        <p class="subtitle is-6 has-text-link has-text-weight-bold mb-2">FIGHTING STYLE</p>
+        <p class="is-size-6 has-text-grey-light">
+          Spider-Man is the most unique character in Marvel Rivals. Stringing together abilities to perform combos makes him play more like a fighting game than a hero shooter.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<section id="MVP" class="section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered has-text-white mb-5">MVP animation</h2>
+
+<div style="text-align: center">
+  <img src="https://static0.fextralifeimages.com/file/marvelrivals/d/df/Spider-man_mvp_default_full-anim.gif"
+   alt="Spiderman mvp"
+   style="width: 850px; max-width: 100%; height: auto; display: inline-block;"
+   />
+   </div>
+
+</body>
+</html>
